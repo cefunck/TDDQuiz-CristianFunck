@@ -1,4 +1,7 @@
 def Add(string_numbers):
     result = 0
-    string_numbers.split(",")
+    try:
+        string_numbers.split(",")
+    except TypeError:
+        print("Input must be a string of numbers delimited by commas.")
     return result
