@@ -10,6 +10,6 @@ class AddFunctionTestCase(unittest.TestCase):
         self.assertIsInstance(Add(self.list_of_numbers),int,
                               "Return Error: The result is not int value")
 
-    def testValidateInput(self):
-        with self.assertRaises(TypeError):
+    def testValidateInputError(self):
+        with self.assertRaises((AttributeError,TypeError)):
             Add(self.invalid_input)
