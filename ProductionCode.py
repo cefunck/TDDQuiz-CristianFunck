@@ -1,2 +1,3 @@
 def Add(string_numbers):
-    return 0
+    result = 0
+    return result
