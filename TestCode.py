@@ -13,3 +13,7 @@ class AddFunctionTestCase(unittest.TestCase):
     def testValidateInputError(self):
         with self.assertRaises((AttributeError,TypeError)):
             Add(self.invalid_input)
+
+    def testValidateCorrectSum(self):
+        self.assertEqual(Add(self.list_of_numbers),7,
+                         "Sum Error: The result of sum is incorrect")
