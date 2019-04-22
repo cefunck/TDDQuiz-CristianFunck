@@ -13,7 +13,7 @@ class AddFunctionTestCase(unittest.TestCase):
                               "Return Error: The result is not int value")
 
     def testValidateInputError(self):
-        with self.assertRaises((AttributeError,TypeError)):
+        with self.assertRaises(TypeError):
             Add(self.invalid_input)
 
     def testValidateCorrectSum(self):
